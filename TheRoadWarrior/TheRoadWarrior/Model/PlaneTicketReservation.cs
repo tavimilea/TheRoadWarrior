@@ -14,6 +14,6 @@ namespace TheRoadWarrior.Model
         public DateTime ArrivalDate { get; set; }
         public String DepartingFrom { get; set; }
         public String ArrivingAt { get; set; }
-        PlaneTicketReservation(): base() { }
+        public PlaneTicketReservation(): base() { }
     }
 }

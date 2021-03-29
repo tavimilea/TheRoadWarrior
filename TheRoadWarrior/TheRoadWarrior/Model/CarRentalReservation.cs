@@ -12,6 +12,6 @@ namespace TheRoadWarrior.Model
         public DateTime EndDate { get; set; }
         public String CarModel { get; set; }
 
-        CarRentalReservation() : base() { }
+        public CarRentalReservation() : base() { }
     }
 }

@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheRoadWarrior", "TheRoadWarrior\TheRoadWarrior.csproj", "{36D1AF82-3798-48B2-B4C8-BF4D463F5C5D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TheRoadWarriorUnitTesting", "TheRoadWarriorUnitTesting", "{8CD84BA0-D4B2-4B8E-B564-DC2862E39B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheRoadWarriorUnitTesting", "TheRoadWarriorUnitTesting\TheRoadWarriorUnitTesting\TheRoadWarriorUnitTesting.csproj", "{D9EB9ACB-C80D-4B83-A604-380F7F66B0E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +19,18 @@ Global
 		{36D1AF82-3798-48B2-B4C8-BF4D463F5C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36D1AF82-3798-48B2-B4C8-BF4D463F5C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36D1AF82-3798-48B2-B4C8-BF4D463F5C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9EB9ACB-C80D-4B83-A604-380F7F66B0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EB9ACB-C80D-4B83-A604-380F7F66B0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EB9ACB-C80D-4B83-A604-380F7F66B0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EB9ACB-C80D-4B83-A604-380F7F66B0E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDFE425C-BAA3-4A4A-912E-65C0FC90A0D8}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9EB9ACB-C80D-4B83-A604-380F7F66B0E2} = {8CD84BA0-D4B2-4B8E-B564-DC2862E39B68}
 	EndGlobalSection
 EndGlobal

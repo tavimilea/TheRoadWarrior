@@ -9,7 +9,7 @@ namespace TheRoadWarrior.Model
     public class LoginResponseWrapper
     {
         public int ResponseCode { get; set; }
-        public String Description;
+        public String Description { get; set; }
         public String ApiKey { get; set; }
 
         public String ReservationKey { get; set; }
