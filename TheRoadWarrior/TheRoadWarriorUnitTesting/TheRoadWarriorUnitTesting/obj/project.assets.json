@@ -6813,19 +6813,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\octav\\.nuget\\packages\\": {}
+    "C:\\Users\\mihai\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting.csproj",
+      "projectUniqueName": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting.csproj",
       "projectName": "TheRoadWarriorUnitTesting",
-      "projectPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting.csproj",
-      "packagesPath": "C:\\Users\\octav\\.nuget\\packages\\",
-      "outputPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting\\obj\\",
+      "projectPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting.csproj",
+      "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarriorUnitTesting\\TheRoadWarriorUnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\octav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6839,8 +6839,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {
-              "projectPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj"
+            "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {
+              "projectPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj"
             }
           }
         }
