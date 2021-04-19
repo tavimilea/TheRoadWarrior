@@ -7,7 +7,7 @@ using TheRoadWarrior.Model;
 
 namespace TheRoadWarrior.Data.Migrations
 {
-    [DbContext(typeof(ReservationDbContext))]
+    [DbContext(typeof(ReservationsDbContext))]
     partial class ReservationDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

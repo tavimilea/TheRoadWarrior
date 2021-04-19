@@ -8,7 +8,7 @@ using TheRoadWarrior.Model;
 
 namespace TheRoadWarrior.Data.Migrations
 {
-    [DbContext(typeof(ReservationDbContext))]
+    [DbContext(typeof(ReservationsDbContext))]
     [Migration("20210329073407_InitialCreate")]
     partial class InitialCreate
     {

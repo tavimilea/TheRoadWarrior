@@ -11,7 +11,5 @@ namespace TheRoadWarrior.Model
         public int ResponseCode { get; set; }
         public String Description { get; set; }
         public String ApiKey { get; set; }
-
-        public String ReservationKey { get; set; }
     }
 }

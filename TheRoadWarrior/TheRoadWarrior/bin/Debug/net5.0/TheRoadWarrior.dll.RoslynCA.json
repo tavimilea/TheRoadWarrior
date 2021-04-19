@@ -18,33 +18,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Program.cs",
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWArrior/TheRoadWarrior/Program.cs",
                 "region": {
                   "startLine": 12,
                   "startColumn": 18,
                   "endLine": 12,
                   "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'Database' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Controllers/LoginController.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 30,
-                  "endLine": 16,
-                  "endColumn": 38
                 }
               }
             }
@@ -60,33 +39,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Model/Reservation.cs",
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWArrior/TheRoadWarrior/Model/Reservation.cs",
                 "region": {
                   "startLine": 12,
                   "startColumn": 21,
                   "endLine": 12,
                   "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S927",
-          "level": "warning",
-          "message": "Rename parameter 'optionbuilder' to 'optionsBuilder' to match the base class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Model/ReservationDbContext.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 71,
-                  "endLine": 26,
-                  "endColumn": 84
                 }
               }
             }
@@ -102,7 +60,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Model/ReservationDbContext.cs",
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWArrior/TheRoadWarrior/Model/ReservationsDbContext.cs",
                 "region": {
                   "startLine": 77,
                   "startColumn": 46,
@@ -159,40 +117,6 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
           "properties": {
             "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S2933": {
-          "id": "S2933",
-          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
-          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that's not marked readonly but is only set in the constructor, it could cause confusion about the field's intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S927": {
-          "id": "S927",
-          "shortDescription": "Parameter names should match base declaration and other partial definitions",
-          "fullDescription": "The name of a parameter in an externally visible. This rule raises an issue when method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
-          "properties": {
-            "category": "Critical Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

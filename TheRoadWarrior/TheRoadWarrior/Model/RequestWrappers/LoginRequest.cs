@@ -8,7 +8,6 @@ namespace TheRoadWarrior.Model.RequestWrappers
 {
     public class LoginRequest
     {
-        public bool Create { get; set; }
         [Required]
         public String Password { get; set; }
         [Required]

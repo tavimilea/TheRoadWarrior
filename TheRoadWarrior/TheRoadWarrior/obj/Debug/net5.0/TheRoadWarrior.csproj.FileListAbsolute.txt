@@ -7,7 +7,6 @@ C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\TheRo
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\TheRoadWarrior.dll
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\ref\TheRoadWarrior.dll
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\TheRoadWarrior.pdb
-C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.csprojAssemblyReference.cache
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.GeneratedMSBuildEditorConfig.editorconfig
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.AssemblyInfoInputs.cache
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.AssemblyInfo.cs

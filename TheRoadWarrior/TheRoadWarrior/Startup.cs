@@ -29,7 +29,7 @@ namespace TheRoadWarrior
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddDbContext<ReservationDbContext>(options => {
+            services.AddDbContext<ReservationsDbContext>(options => {
                 options.UseSqlite(this.Configuration.GetConnectionString("DefaultConnection"));
             });
         }
