@@ -1,25 +1,45 @@
 import { Injectable } from "@angular/core";
 import { HttpClient} from "@angular/common/http";
-import { JwtHelperService } from "@auth0/angular-jwt";
+import { map } from "rxjs/operators";
+
+
 
 @Injectable({
   providedIn: "root"
 })
 export class AuthService {
-  authUrl = "http://localhost:5000/api/auth/";
-  employersUrl = "http://localhost:5000/api/employers/";
-  confirmEmailUrl = "http://localhost:4200/confirm-email/";
-  changePasswordUrl = "http://localhost:4200/change-password/";
-  helper = new JwtHelperService();
-  decodedToken: any;
-
+  baseUrl = "https://localhost:44354/";
 
   constructor(private http: HttpClient) {}
 
-  login() {
+  login(model: any) {
+    return this.http.post(this.baseUrl + 'Login',model).pipe(
+      map((response: any) => {
+        const user = response;
+        console.log(user);
+        if(user.responseCode == 200){
+          console.log(user.responseCode);
+          localStorage.setItem('token',user.apiKey)
+        }
+      })
+    );
   }
 
   register(model: any) {
+    return this.http.post(this.baseUrl + 'Register',model).pipe(
+      map((response: any) => {
+        const user = response;
+        console.log(user);
+        if(user.responseCode == 200){
+          console.log(user.responseCode);
+          localStorage.setItem('token',user.apiKey)
+        }
+        else{
+          console.log(user.responseCode);
+
+        }
+      })
+    );
   }
 
   resetPassword(model: any) {
