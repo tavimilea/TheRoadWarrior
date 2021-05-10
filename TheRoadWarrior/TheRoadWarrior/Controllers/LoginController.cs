@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc;
 using TheRoadWarrior.Model;
 using TheRoadWarrior.Model.Hashing;
 using TheRoadWarrior.Model.RequestWrappers;
@@ -14,10 +9,10 @@ namespace TheRoadWarrior.Controllers
     [Route("[controller]")]
     public class LoginController : ControllerBase
     {
-        readonly ReservationsDbContext Database;
+        private readonly ReservationsDbContext database;
         public LoginController(ReservationsDbContext db)
         {
-            Database = db;
+            database = db;
         }
 
         [HttpPost]
@@ -27,16 +22,16 @@ namespace TheRoadWarrior.Controllers
             {
                try
                 {
-                    var usr = Database.GetUser(request.Username);
-                    if(PasswordHasher.checkHash(request.Password, usr.LoginHash)) {
-                        rsp.ResponseCode = 200;
+                    var usr = database.GetUser(request.Username);
+                    if(PasswordHasher.CheckHash(request.Password, usr.LoginHash)) {
+                        rsp.ResponseCode = (int) ResponseConstants.SUCCES;
                         rsp.Description = "ok";
                         rsp.ApiKey = usr.ApiKey;
                     }
                 } 
                 catch
                 {
-                    rsp.ResponseCode = 400;
+                    rsp.ResponseCode = (int) ResponseConstants.FAIL;
                     rsp.Description = "Wrong password/username";
                 }
             }

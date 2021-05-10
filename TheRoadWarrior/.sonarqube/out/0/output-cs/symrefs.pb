@@ -1,20 +1,42 @@
-©
-XC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Controllers\LoginController.cs
+º
+XC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Controllers\LoginController.cs
 
-  (
-' / !! // &
+  
+' /  &
 
- 
-5 7 
+ 
+5 7 
 
-$ 'Z
-6 = B I? FR YH O!!U \/// 6000 7å
-! $"" ## $$ %% (( )) 11 22 33 44 99 :: == 
-  !!J S
- !!1 7$$! '
- &!!9 H%%) 8(
-// 00B E33% (44- 0¥
-iC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Data\Migrations\20210329073407_InitialCreate.cs
+$ (
+7 >/ 60 7F
+! $   !! "" '' (( ++ 
+ B E""% (õ
+[C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Controllers\RegisterController.cs
+
+ #
+' / %% 
+
+ !
+8 : 
+
+$ (F
+9 @6 =I P3 : ( /%%@ Gd
+! $    !! && '' (( ,, -- // 
+ %%5 >
+ %%- 3'' #≤
+XC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Controllers\TripsController.cs
+
+  (
+' /  " 
+
+ 
+5 7 
+
+  '
+8 :3 5, .<
+   "" ## %% 
+ $ '¥
+iC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Data\Migrations\20210329073407_InitialCreate.cs
 
  &
 
@@ -53,7 +75,7 @@ iC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Data\Migrations\20210
 üü 
 ¢¢ 
 •• ï
-MC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\AgencyUser.cs
+MC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\AgencyUser.cs
 
  
 
@@ -65,7 +87,7 @@ MC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\AgencyUser.cs
  & 
 
  ï
-WC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\CarRentalReservation.cs
+WC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\CarRentalReservation.cs
 
 		 %
 
@@ -75,8 +97,23 @@ WC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\CarRentalReserv
 
  
 
- #ù
-SC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\HotelReservation.cs
+ #◊
+YC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\Hashing\PasswordHasher.cs
+
+ 
+
+
+
+ $
+
+
+, 3> E
+  
+
+ $
+, 1, 1
+: ?3 8ù
+SC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\HotelReservation.cs
 
 		 !
 
@@ -89,7 +126,7 @@ SC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\HotelReservatio
  $
 
  ª
-YC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\PlaneTicketReservation.cs
+YC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\PlaneTicketReservation.cs
 
 		 '
 
@@ -105,17 +142,33 @@ YC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\PlaneTicketRese
 
   
 
- %ë
-_C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\RequestWrappers\LoginRequest.cs
+ %á
+aC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\RequestWrappers\AddTripRequest.cs
+
+ 
+
+
+
+ 
+
+ Ö
+_C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\RequestWrappers\LoginRequest.cs
 
 		 
 
- 
+ 
 
- 
+ î
+bC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\RequestWrappers\RegisterRequest.cs
 
- §
-NC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\Reservation.cs
+		  
+
+ 
+
+ 
+
+ #§
+NC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\Reservation.cs
 
  
 
@@ -131,70 +184,81 @@ NC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\Reservation.cs
 
  "
 
- %Ë
-XC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\ReservationsDbContext.cs
+ %æ
+XC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\ReservationsDbContext.cs
+
+ &
+
+  
+
+! ,<
+$ 2!!  .**  .33 >> PP  .
+
++ @
+
+' 8
+
+- D
+
+" .
+  kk 
+
+ $
+I PY `
+
+  -
+F T 
+
+ $
+, 4!!T \
+!! "" && 
+!!= @!!D G(
+BB 3$$ /-- /55 /
+
+(( ,
+((4 :**i o
+** ++ // 
+**= @**] `
+
+11 '
+11/ 5:: 
+11> G99 %
+11P X33C K;; #
+33, /333 6
+77 >> "
+
+BB; <
+
+GG 
+GG# ,PPN W
+GG5 =KK #
+II QQ 
+PP QQ 
+PP= @PPD G
+
+UU -
+VV kk: C
+WW ii %
+XX ff! *
+YY gg &
+ZZ hh 
+[[ bb 
+\\ #cc$ 5
+]] !ee '
+^^ dd +
+``  ll' *
+kk ll 
+kk+ -kk1 3â
+cC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\ResponseWrappers\AddTripResponse.cs
+
+  
 
 
 
- &
+ 
 
-  
-
-! ,2
-$ 2    .** 66 HH  .
-
-+ @
-
-' 8
-
-- D
-
-" .
-  cc 
-
- $
-I PY `
-
-  -
-F T 
-
- $
-, 4  T \
-   !! %% 
-  = @  D G
-:: 3## /,, /
-
-(( '
-((/ 511 
-((> M33" 1
-((V _00 %
-((h p**C K22 #
-**, /**3 6
-.. 66 "
-
-::; <
-
-?? 
-??# ,HHN W
-??5 =CC #
-AA II 
-HH II 
-HH= @HHD G
-
-MM -
-NN cc: C
-OO aa %
-PP ^^! *
-QQ __ &
-RR `` 
-SS ZZ 
-TT #[[$ 5
-UU !]] '
-VV \\ +
-XX  dd' *
-cc dd 
-cc+ -cc1 3¶
-hC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\ResponseWrappers\LoginResponseWrapper.cs
+ !ö
+hC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\ResponseWrappers\LoginResponseWrapper.cs
 
 		 %
 
@@ -202,10 +266,8 @@ hC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\ResponseWrapper
 
  !
 
- 
-
- $ò
-PC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\TravellerUser.cs
+ ò
+PC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\TravellerUser.cs
 
 		 
 
@@ -215,7 +277,7 @@ PC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\TravellerUser.c
  
 
  «
-GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\Trip.cs
+GC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\Trip.cs
 
  
 
@@ -231,7 +293,7 @@ GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\Trip.cs
  
 
  y
-GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\User.cs
+GC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\User.cs
 
 		 
 
@@ -240,7 +302,7 @@ GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\User.cs
  
 
  ∂
-DC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Program.cs
+DC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Program.cs
 
  
 
@@ -249,7 +311,7 @@ DC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Program.cs
 # 4 
 > B& *
 * 4 Ä
-DC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Startup.cs
+DC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Startup.cs
 
  
 
@@ -266,7 +328,7 @@ DC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Startup.cs
 &&K N(( 
 // 11 
 :: &<< î
-LC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\WeatherForecast.cs
+LC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\WeatherForecast.cs
 
   
 

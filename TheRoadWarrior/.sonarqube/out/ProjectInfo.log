@@ -1,11 +1,12 @@
 Product projects
 ---------------------------------------
-C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\TheRoadWarrior.csproj
+C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior.csproj
 
 
 Test projects
 ---------------------------------------
-C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarriorUnitTesting\TheRoadWarriorUnitTesting\TheRoadWarriorUnitTesting.csproj
+C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\IntegrationTests\IntegrationTests.csproj
+C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarriorUnitTesting\TheRoadWarriorUnitTesting\TheRoadWarriorUnitTesting.csproj
 
 
 Invalid projects

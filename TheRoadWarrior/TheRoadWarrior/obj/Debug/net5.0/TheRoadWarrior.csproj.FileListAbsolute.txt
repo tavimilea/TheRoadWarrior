@@ -57,3 +57,4 @@ C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\Micro
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.csprojAssemblyReference.cache

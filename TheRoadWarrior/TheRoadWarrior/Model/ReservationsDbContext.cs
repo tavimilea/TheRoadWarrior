@@ -3,12 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Threading.Tasks;
 using TheRoadWarrior.Model.Hashing;
 
 namespace TheRoadWarrior.Model
 {
-    public class ReservationsDbContext: DbContext
+    public class ReservationsDbContext : DbContext, IReservationsDbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<AgencyUser> AgencyUsers { get; set; }
@@ -21,7 +20,7 @@ namespace TheRoadWarrior.Model
 
         public ReservationsDbContext([NotNullAttribute] DbContextOptions options) : base(options) //config
         {
-            Database.EnsureCreated(); 
+            Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -39,7 +38,7 @@ namespace TheRoadWarrior.Model
         }
         public TravellerUser GetUserByApiKey(String apiKey)
         {
-            TravellerUser usr = TravellerUsers.ToList().Find(usr => PasswordHasher.checkHash(usr.ApiKey, apiKey));
+            TravellerUser usr = TravellerUsers.ToList().Find(usr => PasswordHasher.CheckHash(usr.ApiKey, apiKey));
             if (usr == null)
             {
                 throw InvalidOperationException("User does not exist");
@@ -48,7 +47,7 @@ namespace TheRoadWarrior.Model
         }
         public void CreateTravellerUser(String apiKey, String loginHash, String username)
         {
-            if(TravellerUsers.ToList().Find(usr => usr.UserName == username) != null)
+            if (TravellerUsers.ToList().Find(usr => usr.UserName == username) != null)
             {
                 throw InvalidOperationException("UserAlreadyExists");
             }
@@ -106,7 +105,62 @@ namespace TheRoadWarrior.Model
             };
             var trip = Trips.ToList().Find(tr => tr.Id == forTripId);
             trip.HotelReservations.Add(hrs);
+            this.SaveChanges();
         }
 
+        public void AddPlaneTicketReservationToTrip(
+                                                        int forTripId,
+                                                        string ticketNumber,
+                                                        string flightNumber,
+                                                        DateTime depDate,
+                                                        DateTime arrDate,
+                                                        string from,
+                                                        string to,
+                                                        float amountAlreadyPaid,
+                                                        float price,
+                                                        string observations = "",
+                                                        AgencyUser agencyUser = null)
+        {
+            PlaneTicketReservation rsv = new()
+            {
+                Price = price,
+                AmountAlreadyPaid = amountAlreadyPaid,
+                Observations = observations,
+                AgencyUser = agencyUser,
+                TicketNumber = ticketNumber,
+                FlightNumber = flightNumber,
+                DepartingFrom = from,
+                ArrivingAt = to,
+                DepartureDate = depDate,
+                ArrivalDate = arrDate,
+            };
+            var trip = Trips.ToList().Find(tr => tr.Id == forTripId);
+            trip.PlaneTicketReservations.Add(rsv);
+        }
+
+        public void AddCarRentalReservation(
+            int forTripId,
+            DateTime start,
+            DateTime end,
+            string carModel,
+            float price,
+            float amountAlreadyPaid,
+            string observations = "",
+            AgencyUser agencyUser = null)
+        {
+            CarRentalReservation rvs = new()
+            {
+                Price = price,
+                AmountAlreadyPaid = amountAlreadyPaid,
+                Observations = observations,
+                AgencyUser = agencyUser,
+                StartDate = start,
+                CarModel = carModel,
+            };
+
+            var trip = Trips.ToList().Find(tr => tr.Id == forTripId);
+            trip.CarRentalReservations.Add(rvs);
+            this.SaveChanges();
+        }
     }
 }

@@ -4,14 +4,14 @@
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
   <ProjectGuid>36d1af82-3798-48b2-b4c8-bf4d463f5c5d</ProjectGuid>
-  <FullPath>C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\TheRoadWarrior.csproj</FullPath>
+  <FullPath>C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\.sonarqube\conf\0\FilesToAnalyze.txt" />
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\.sonarqube\conf\0\FilesToAnalyze.txt" />
   </AnalysisResults>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\bin\Debug\net5.0\TheRoadWarrior.dll.RoslynCA.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\.sonarqube\out\0</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\bin\Debug\net5.0\TheRoadWarrior.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\.sonarqube\out\0</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>

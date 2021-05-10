@@ -1,14 +1,52 @@
-½
-kC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarriorUnitTesting\TheRoadWarriorUnitTesting\UnitTest1.cs
+|
+LC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\IntegrationTests\ContentHelper.cs
 
- 
-		' ) 
+ %
+
+		( 8
+		@ C
+
+A Dó
+KC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\IntegrationTests\RegisterTest.cs
 
 
 
- 
-
-
-/ 1 
+ 
+ ! !!! '
 
- 
+ 
+1 8 
+
+ 0
+ !!2 9!!^ e
+!! "" &%% 
+
+"" È
+JC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\IntegrationTests\TestFixture.cs
+
+ (
+ %::) 1NN) 1ZZ# +
+ +OO ,
+3 Fb u
+Q ` -(
+ !!Q \!!a l""K V
+ #2 E&&` s2
+    -J W$$  (
+ (   (!!2 F"", @(
+)) !55 ]] `` 
+
+++ <
+00  44 `` aa bb cc 
+
+22 
+88 1WW# 5
+88E MII 
+:: @@% 4
+<< II" )
+
+LL 
+LL% COO- K
+NN OOM \
+OO RR (VV  +
+QQ $XX" 6
+UU ]]$ 2

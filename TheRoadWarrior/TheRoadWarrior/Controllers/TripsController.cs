@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc;
 using TheRoadWarrior.Model;
 using TheRoadWarrior.Model.RequestWrappers;
 using TheRoadWarrior.Model.ResponseWrappers;
@@ -28,11 +23,11 @@ namespace TheRoadWarrior.Controllers
                 var usr = Database.GetUserByApiKey(rq.ApiKey);
                 Database.CreateTrip(usr.Id, rq.TripName);
                 rsp.Description = "Created";
-                rsp.ResponseCode = 200;
+                rsp.ResponseCode = (int) ResponseConstants.SUCCES;
             } catch
             {
                 rsp.Description = "Key provided is invalid";
-                rsp.ResponseCode = 400;
+                rsp.ResponseCode = (int) ResponseConstants.SUCCES;
             }
             return rsp;
         }

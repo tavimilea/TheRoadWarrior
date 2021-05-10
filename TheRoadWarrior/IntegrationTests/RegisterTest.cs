@@ -1,7 +1,5 @@
-﻿using System;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using TheRoadWarrior;
 using Xunit;
 
@@ -15,6 +13,7 @@ namespace IntegrationTests
         {
             Client = fixture.Client;
         }
+        [Fact]
         public async Task TestPostStockItemAsync()
         {
             // Arrange

@@ -1,22 +1,316 @@
-„%
-XC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Controllers\LoginController.cs
-	namespace
-
- 	
-TheRoadWarrior
-
-
+õ
+XC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Controllers\LoginController.cs
+	namespace 	
+TheRoadWarrior
  
-.
-
- 
-Controllers
-
- $
-{ 
-[ 
-ApiController 
-] 
+. 
+Controllers $
+{ 
+[ 
+ApiController 
+] 
+[ 
+Route 
+
+(
+ 
+$str 
+) 
+] 
+public 
+
+class 
+LoginController  
+:! "
+ControllerBase# 1
+{ 
+readonly !
+ReservationsDbContext &
+Database' /
+;/ 0
+public 
+LoginController 
+( !
+ReservationsDbContext 4
+db5 7
+)7 8
+{ 	
+Database 
+= 
+db 
+; 
+} 	
+[ 	
+HttpPost	 
+] 
+public  
+LoginResponseWrapper #
+Post$ (
+() *
+LoginRequest* 6
+request7 >
+)> ?
+{ 	 
+LoginResponseWrapper  
+rsp! $
+=% &
+new' * 
+LoginResponseWrapper+ ?
+(? @
+)@ A
+;A B
+{ 
+try 
+{ 
+var 
+usr 
+= 
+Database &
+.& '
+GetUser' .
+(. /
+request/ 6
+.6 7
+Username7 ?
+)? @
+;@ A
+if 
+( 
+PasswordHasher %
+.% &
+	checkHash& /
+(/ 0
+request0 7
+.7 8
+Password8 @
+,@ A
+usrB E
+.E F
+	LoginHashF O
+)O P
+)P Q
+{R S
+rsp   
+.   
+ResponseCode   (
+=  ) *
+$num  + .
+;  . /
+rsp!! 
+.!! 
+Description!! '
+=!!( )
+$str!!* .
+;!!. /
+rsp"" 
+."" 
+ApiKey"" "
+=""# $
+usr""% (
+.""( )
+ApiKey"") /
+;""/ 0
+}## 
+}$$ 
+catch%% 
+{&& 
+rsp'' 
+.'' 
+ResponseCode'' $
+=''% &
+$num''' *
+;''* +
+rsp(( 
+.(( 
+Description(( #
+=(($ %
+$str((& ?
+;((? @
+})) 
+}** 
+return++ 
+rsp++ 
+;++ 
+},, 	
+}-- 
+}.. ≈
+[C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Controllers\RegisterController.cs
+	namespace 	
+TheRoadWarrior
+ 
+. 
+Controllers $
+{ 
+[ 
+ApiController 
+] 
+[ 
+Route 
+
+(
+ 
+$str 
+) 
+] 
+public 
+
+class 
+RegisterController #
+:$ %
+ControllerBase& 4
+{ 
+readonly !
+ReservationsDbContext &
+Database' /
+;/ 0
+public 
+RegisterController !
+(! "!
+ReservationsDbContext" 7
+db8 :
+): ;
+{ 	
+Database 
+= 
+db 
+; 
+} 	
+[ 	
+HttpPost	 
+] 
+public  
+LoginResponseWrapper #
+Post$ (
+(( )
+RegisterRequest) 8
+request9 @
+)@ A
+{ 	 
+LoginResponseWrapper  
+rsp! $
+=% &
+new' * 
+LoginResponseWrapper+ ?
+(? @
+)@ A
+;A B
+String 
+	loginHash 
+= 
+PasswordHasher -
+.- .
+getHash. 5
+(5 6
+request6 =
+.= >
+Password> F
++G H
+requestI P
+.P Q
+UsernameQ Y
+)Y Z
+;Z [
+String 
+apiKey 
+= 
+PasswordHasher *
+.* +
+getHash+ 2
+(2 3
+request3 :
+.: ;
+Password; C
+)C D
+;D E
+if 
+( 
+request 
+. 
+PasswordCheck $
+!=% '
+request( /
+./ 0
+Password0 8
+)8 9
+{ 
+rsp 
+. 
+ResponseCode  
+=! "
+$num# &
+;& '
+rsp   
+.   
+Description   
+=    !
+$str  " :
+;  : ;
+return!! 
+rsp!! 
+;!! 
+}"" 
+try## 
+{$$ 
+Database%% 
+.%% 
+CreateTravellerUser%% ,
+(%%, -
+apiKey%%- 3
+,%%3 4
+	loginHash%%5 >
+,%%> ?
+request%%@ G
+.%%G H
+Username%%H P
+)%%P Q
+;%%Q R
+rsp&& 
+.&& 
+ResponseCode&&  
+=&&! "
+$num&&# &
+;&&& '
+rsp'' 
+.'' 
+ApiKey'' 
+='' 
+apiKey'' #
+;''# $
+rsp(( 
+.(( 
+Description(( 
+=((  !
+$str((" &
+;((& '
+})) 
+catch** 
+{++ 
+rsp,, 
+.,, 
+ResponseCode,,  
+=,,! "
+$num,,# &
+;,,& '
+rsp-- 
+.-- 
+Description-- 
+=--  !
+$str--" <
+;--< =
+}.. 
+return// 
+rsp// 
+;// 
+}00 	
+}22 
+}33 õ
+XC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Controllers\TripsController.cs
+	namespace 	
+TheRoadWarrior
+ 
+. 
+Controllers $
+{ 
 [ 
 Route 
 
@@ -24,258 +318,115 @@ XC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Controllers\LoginCont
  
 $str 
 ) 
-] 
-public 
+] 
+[ 
+ApiController 
+] 
+public 
 
-class 
-LoginController  
-:! "
-ControllerBase# 1
-{ 
-readonly !
-ReservationsDbContext &
-Database' /
-;/ 0
-public 
-LoginController 
-( !
-ReservationsDbContext 4
-db5 7
-)7 8
-{ 	
-Database 
-= 
-db 
-; 
-} 	
+class 
+TripsController  
+:! "
+ControllerBase# 1
+{ 
+readonly !
+ReservationsDbContext &
+Database' /
+;/ 0
+public 
+TripsController 
+( !
+ReservationsDbContext 4
+db5 7
+)7 8
+{ 	
+Database 
+= 
+db 
+; 
+} 	
 [ 	
 HttpPost	 
-( 
-$str  
-)  !
-]! "
-public  
-LoginResponseWrapper #
-Get$ '
-(( )
-LoginRequest) 5
-request6 =
-)= >
-{ 	 
-LoginResponseWrapper  
-rsp! $
-=% &
-new' * 
-LoginResponseWrapper+ ?
-(? @
-)@ A
-;A B
-if 
-( 
-request 
-. 
-Create 
-) 
-{ 
-String 
-	loginHash  
-=! "
-BCrypt# )
-.) *
-Net* -
-.- .
-BCrypt. 4
-.4 5
-HashPassword5 A
-(A B
-requestB I
-.I J
-PasswordJ R
-)R S
-;S T
-String 
-apiKey 
-= 
-BCrypt  &
-.& '
-Net' *
-.* +
-BCrypt+ 1
-.1 2
-HashPassword2 >
-(> ?
-request? F
-.F G
-PasswordG O
-+P Q
-requestR Y
-.Y Z
-UsernameZ b
-)b c
-;c d
-String 
-reservationHash &
-=' (
-BCrypt) /
-./ 0
-Net0 3
-.3 4
-BCrypt4 :
-.: ;
-HashPassword; G
-(G H
-requestH O
-.O P
-UsernameP X
-)X Y
-;Y Z
-try 
-{   
-Database!! 
-.!! 
-CreateTravellerUser!! 0
-(!!0 1
-apiKey!!1 7
-,!!7 8
-reservationHash!!9 H
-,!!H I
-	loginHash!!J S
-,!!S T
-request!!U \
-.!!\ ]
-Username!!] e
-)!!e f
-;!!f g
-rsp"" 
-."" 
-ResponseCode"" $
-=""% &
-$num""' *
-;""* +
-rsp## 
-.## 
-Description## #
-=##$ %
-$str##& *
-;##* +
-rsp$$ 
-.$$ 
-ApiKey$$ 
-=$$  
-apiKey$$! '
-;$$' (
-rsp%% 
-.%% 
-ReservationKey%% &
-=%%' (
-reservationHash%%) 8
-;%%8 9
-}&& 
-catch&& 
-{'' 
-rsp(( 
-.(( 
-ResponseCode(( $
-=((% &
-$num((' *
-;((* +
-rsp)) 
-.)) 
-Description)) #
-=))$ %
-$str))& @
-;))@ A
-}** 
-}++ 
-else++ 
-{,, 
-try-- 
-{.. 
-var// 
-usr// 
-=// 
-Database// &
-.//& '
-GetUser//' .
-(//. /
-request/// 6
-.//6 7
-Username//7 ?
-)//? @
-;//@ A
-if00 
-(00 
-BCrypt00 
-.00 
-Net00 !
-.00! "
-BCrypt00" (
-.00( )
-Verify00) /
-(00/ 0
-request000 7
-.007 8
-Password008 @
-,00@ A
-usr00B E
-.00E F
-	LoginHash00F O
-)00O P
-)00P Q
-{00R S
-rsp11 
-.11 
-ResponseCode11 (
-=11) *
-$num11+ .
-;11. /
-rsp22 
-.22 
-Description22 '
-=22( )
-$str22* .
-;22. /
-rsp33 
-.33 
-ApiKey33 "
-=33# $
-usr33% (
-.33( )
-ApiKey33) /
-;33/ 0
-rsp44 
-.44 
-ReservationKey44 *
-=44+ ,
-usr44- 0
-.440 1
-ReservationHash441 @
-;44@ A
-}55 
-}66 
-catch77 
-{88 
-rsp99 
-.99 
-ResponseCode99 $
-=99% &
-$num99' *
-;99* +
-rsp:: 
-.:: 
-Description:: #
-=::$ %
-$str::& ?
-;::? @
-};; 
-}<< 
-return== 
-rsp== 
-;== 
-}>> 	
-}?? 
-}@@ Óú
-iC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Data\Migrations\20210329073407_InitialCreate.cs
+] 
+public 
+AddTripResponse 
+AddTrip  '
+(( )
+AddTripRequest) 7
+rq8 :
+): ;
+{ 	
+AddTripResponse 
+rsp 
+=  !
+new" %
+AddTripResponse& 5
+(5 6
+)6 7
+;7 8
+try 
+{ 
+var 
+usr 
+= 
+Database "
+." #
+GetUserByApiKey# 2
+(2 3
+rq3 5
+.5 6
+ApiKey6 <
+)< =
+;= >
+Database 
+. 
+
+CreateTrip #
+(# $
+usr$ '
+.' (
+Id( *
+,* +
+rq, .
+.. /
+TripName/ 7
+)7 8
+;8 9
+rsp 
+. 
+Description 
+=  !
+$str" +
+;+ ,
+rsp 
+. 
+ResponseCode  
+=! "
+$num# &
+;& '
+}   
+catch   
+{!! 
+rsp"" 
+."" 
+Description"" 
+=""  !
+$str""" ;
+;""; <
+rsp## 
+.## 
+ResponseCode##  
+=##! "
+$num### &
+;##& '
+}$$ 
+return%% 
+rsp%% 
+;%% 
+}&& 	
+}'' 
+}(( Óú
+iC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Data\Migrations\20210329073407_InitialCreate.cs
 	namespace 	
 TheRoadWarrior
  
@@ -1561,7 +1712,7 @@ ForeignKeyss $
 }
 ®® 
 }©© ù
-MC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\AgencyUser.cs
+MC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\AgencyUser.cs
 	namespace 	
 TheRoadWarrior
  
@@ -1640,7 +1791,7 @@ AgencyUser 
 } 	
 } 
 } ﬁ
-WC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\CarRentalReservation.cs
+WC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\CarRentalReservation.cs
 	namespace 	
 TheRoadWarrior
  
@@ -1694,8 +1845,95 @@ WC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\CarRentalReserv
 {/ 0
 }1 2
 } 
-} ˜
-SC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\HotelReservation.cs
+} ì
+
+YC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\Hashing\PasswordHasher.cs
+	namespace 	
+TheRoadWarrior
+ 
+. 
+Model 
+. 
+Hashing &
+{ 
+public 
+
+class 
+PasswordHasher 
+{		 
+public
+
+ 
+static
+
+ 
+String
+
+ 
+getHash
+
+ $
+(
+
+$ %
+String
+
+% +
+fromStr
+
+, 3
+)
+
+3 4
+{ 	
+String 
+	loginHash 
+= 
+BCrypt %
+.% &
+Net& )
+.) *
+BCrypt* 0
+.0 1
+HashPassword1 =
+(= >
+fromStr> E
+)E F
+;F G
+return 
+	loginHash 
+; 
+} 	
+public 
+static 
+bool 
+	checkHash $
+($ %
+String% +
+hash1, 1
+,1 2
+String3 9
+hash2: ?
+)? @
+{ 	
+return 
+BCrypt 
+. 
+Net 
+. 
+BCrypt $
+.$ %
+Verify% +
+(+ ,
+hash1, 1
+,1 2
+hash23 8
+)8 9
+;9 :
+} 	
+} 
+} ˜
+SC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\HotelReservation.cs
 	namespace 	
 TheRoadWarrior
  
@@ -1759,7 +1997,7 @@ SC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\HotelReservatio
 }, -
 } 
 } œ
-YC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\PlaneTicketReservation.cs
+YC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\PlaneTicketReservation.cs
 	namespace 	
 TheRoadWarrior
  
@@ -1841,8 +2079,60 @@ ArrivingAt  
 {0 1
 }2 3
 } 
-} ë
-_C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\RequestWrappers\LoginRequest.cs
+} ì
+aC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\RequestWrappers\AddTripRequest.cs
+	namespace 	
+TheRoadWarrior
+ 
+. 
+Model 
+. 
+RequestWrappers .
+{ 
+public 
+
+class 
+AddTripRequest 
+{		 
+public
+
+ 
+String
+
+ 
+TripName
+
+ 
+{
+
+  
+get
+
+! $
+;
+
+$ %
+set
+
+& )
+;
+
+) *
+}
+
++ ,
+public 
+String 
+ApiKey 
+{ 
+get "
+;" #
+set$ '
+;' (
+}) *
+} 
+} ˘
+_C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\RequestWrappers\LoginRequest.cs
 	namespace 	
 TheRoadWarrior
  
@@ -1857,43 +2147,88 @@ _C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\RequestWrappers
 LoginRequest		 
 {
 
- 
-public 
-bool 
-Create 
-{ 
-get  
-;  !
-set" %
-;% &
-}' (
-[ 	
-Required	 
-] 
-public 
-String 
-Password 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-[ 	
-Required	 
-] 
-public 
-String 
-Username 
-{  
-get! $
-;$ %
-set& )
-;) *
-}+ ,
-} 
-} Ç	
-NC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\Reservation.cs
+ 
+[ 	
+Required	 
+] 
+public 
+String 
+Password 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+[ 	
+Required	 
+] 
+public 
+String 
+Username 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+} 
+} ‘
+bC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\RequestWrappers\RegisterRequest.cs
+	namespace 	
+TheRoadWarrior
+ 
+. 
+Model 
+. 
+RequestWrappers .
+{ 
+public		 
+
+class		 
+RegisterRequest		  
+{
+
+ 
+[ 	
+Required	 
+] 
+public 
+String 
+Password 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+[ 	
+Required	 
+] 
+public 
+String 
+Username 
+{  
+get! $
+;$ %
+set& )
+;) *
+}+ ,
+[ 	
+Required	 
+] 
+public 
+String 
+PasswordCheck #
+{$ %
+get& )
+;) *
+set+ .
+;. /
+}0 1
+} 
+} Ç	
+NC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\Reservation.cs
 	namespace 	
 TheRoadWarrior
  
@@ -1976,526 +2311,614 @@ AgencyUser %
 ;1 2
 }3 4
 } 
-} íH
-XC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\ReservationsDbContext.cs
-	namespace 	
-TheRoadWarrior
+} îN
+XC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\ReservationsDbContext.cs
+	namespace		 	
+TheRoadWarrior		
  
-. 
-Model 
-{		 
-public
+.		 
+Model		 
+{
 
- 
+ 
+public 
 
-class
-
- !
-ReservationsDbContext
-
- &
-:
-
-& '
-	DbContext
-
-( 1
-{ 
-public 
-DbSet 
-< 
-User 
-> 
-Users  
-{! "
-get# &
-;& '
-set( +
-;+ ,
-}- .
+class !
+ReservationsDbContext &
+:& '
+	DbContext( 1
+{ 
 public 
 DbSet 
-< 
-
-AgencyUser 
->  
-AgencyUsers! ,
-{- .
-get/ 2
-;2 3
-set4 7
-;7 8
-}9 :
+< 
+User 
+> 
+Users  
+{! "
+get# &
+;& '
+set( +
+;+ ,
+}- .
 public 
 DbSet 
-< 
-TravellerUser "
->" #
-TravellerUsers$ 2
-{3 4
-get5 8
-;8 9
-set: =
-;= >
-}? @
+< 
+
+AgencyUser 
+>  
+AgencyUsers! ,
+{- .
+get/ 2
+;2 3
+set4 7
+;7 8
+}9 :
 public 
 DbSet 
-<  
-CarRentalReservation )
->) *!
-CarRentalReservations+ @
-{A B
-getC F
-;F G
-setH K
-;K L
-}M N
+< 
+TravellerUser "
+>" #
+TravellerUsers$ 2
+{3 4
+get5 8
+;8 9
+set: =
+;= >
+}? @
 public 
 DbSet 
-< 
-HotelReservation %
->% &
-HotelReservations' 8
-{9 :
-get; >
-;> ?
-set@ C
-;C D
-}E F
+<  
+CarRentalReservation )
+>) *!
+CarRentalReservations+ @
+{A B
+getC F
+;F G
+setH K
+;K L
+}M N
 public 
 DbSet 
-< "
-PlaneTicketReservation +
->+ ,#
-PlaneTicketReservations- D
-{E F
-getG J
-;J K
-setL O
-;O P
-}Q R
+< 
+HotelReservation %
+>% &
+HotelReservations' 8
+{9 :
+get; >
+;> ?
+set@ C
+;C D
+}E F
 public 
 DbSet 
-< 
-Reservation  
->  !
-Reservations" .
-{/ 0
-get1 4
-;4 5
-set6 9
-;9 :
-}; <
+< "
+PlaneTicketReservation +
+>+ ,#
+PlaneTicketReservations- D
+{E F
+getG J
+;J K
+setL O
+;O P
+}Q R
 public 
 DbSet 
-< 
-Trip 
-> 
-Trips  
-{! "
-get# &
-;& '
-set( +
-;+ ,
-}- .
-public !
-ReservationsDbContext $
-($ %
-[% &
-NotNullAttribute& 6
-]6 7
-DbContextOptions8 H
-optionsI P
-)P Q
-:R S
-baseT X
-(X Y
-optionsY `
-)` a
-{ 	
-Database 
-. 
-EnsureCreated "
-(" #
-)# $
-;$ %
-} 	
-	protected 
-override 
-void 
-OnConfiguring  -
-(- .#
-DbContextOptionsBuilder. E
-optionsBuilderF T
-)T U
-{ 	
-optionsBuilder 
-. 
-	UseSqlite $
-($ %
-$str% C
-)C D
-;D E
-} 	
-public 
-TravellerUser 
-GetUser $
-($ %
-String% +
-username, 4
-)4 5
-{ 	
-TravellerUser   
-usr   
-=   
-TravellerUsers    .
-.  . /
-ToList  / 5
-(  5 6
-)  6 7
-.  7 8
-Find  8 <
-(  < =
-usr  = @
-=>  A C
-usr  D G
-.  G H
-UserName  H P
-==  Q S
-username  T \
-)  \ ]
-;  ] ^
-if!! 
-(!! 
-usr!! 
-==!! 
-null!! 
-)!! 
-{"" 
-throw## %
-InvalidOperationException## /
-(##/ 0
-$str##0 E
-)##E F
-;##F G
-}$$ 
-return%% 
-usr%% 
-;%% 
-}&& 	
-public(( 
-void(( 
-CreateTravellerUser(( '
-(((' (
-String((( .
-apiKey((/ 5
-,((5 6
-String((7 =
-reservationHash((> M
-,((M N
-String((O U
-	loginHash((V _
-,((_ `
-String((a g
-username((h p
-)((p q
-{)) 	
-if** 
-(** 
-TravellerUsers** 
-.** 
-ToList** $
-(**$ %
-)**% &
-.**& '
-Find**' +
-(**+ ,
-usr**, /
-=>**0 2
-usr**3 6
-.**6 7
-UserName**7 ?
-==**@ B
-username**C K
-)**K L
-!=**M O
-null**P T
-)**T U
-{++ 
-throw,, %
-InvalidOperationException,, /
-(,,/ 0
-$str,,0 C
-),,C D
-;,,D E
-}-- 
-TravellerUser.. 
-usr.. 
-=.. 
-new..  #
-(..# $
-)..$ %
-{// 
-	LoginHash00 
-=00 
-	loginHash00 %
-,00% &
-ApiKey11 
-=11 
-apiKey11 
-,11  
-UserName22 
-=22 
-username22 #
-,22# $
-ReservationHash33 
-=33  !
-reservationHash33" 1
-,331 2
-Trips44 
-=44 
-new44 
-List44  
-<44  !
-Trip44! %
->44% &
-(44& '
-)44' (
-}55 
-;55 
-TravellerUsers66 
-.66 
-Add66 
-(66 
-usr66 "
-)66" #
-;66# $
-this77 
-.77 
-SaveChanges77 
-(77 
-)77 
-;77 
-}88 	
-private:: 
-	Exception:: %
-InvalidOperationException:: 3
-(::3 4
-string::4 :
-v::; <
-)::< =
-{;; 	
-throw<< 
-new<< #
-NotImplementedException<< -
-(<<- .
-)<<. /
-;<</ 0
-}== 	
-public?? 
-void?? 
+< 
+Reservation  
+>  !
+Reservations" .
+{/ 0
+get1 4
+;4 5
+set6 9
+;9 :
+}; <
+public 
+DbSet 
+< 
+Trip 
+> 
+Trips  
+{! "
+get# &
+;& '
+set( +
+;+ ,
+}- .
+public !
+ReservationsDbContext $
+($ %
+[% &
+NotNullAttribute& 6
+]6 7
+DbContextOptions8 H
+optionsI P
+)P Q
+:R S
+baseT X
+(X Y
+optionsY `
+)` a
+{ 	
+Database 
+. 
+EnsureCreated "
+(" #
+)# $
+;$ %
+} 	
+	protected 
+override 
+void 
+OnConfiguring  -
+(- .#
+DbContextOptionsBuilder. E
+optionsBuilderF T
+)T U
+{ 	
+optionsBuilder 
+. 
+	UseSqlite $
+($ %
+$str% C
+)C D
+;D E
+} 	
+public 
+TravellerUser 
+GetUser $
+($ %
+String% +
+username, 4
+)4 5
+{   	
+TravellerUser!! 
+usr!! 
+=!! 
+TravellerUsers!!  .
+.!!. /
+ToList!!/ 5
+(!!5 6
+)!!6 7
+.!!7 8
+Find!!8 <
+(!!< =
+usr!!= @
+=>!!A C
+usr!!D G
+.!!G H
+UserName!!H P
+==!!Q S
+username!!T \
+)!!\ ]
+;!!] ^
+if"" 
+("" 
+usr"" 
+=="" 
+null"" 
+)"" 
+{## 
+throw$$ %
+InvalidOperationException$$ /
+($$/ 0
+$str$$0 E
+)$$E F
+;$$F G
+}%% 
+return&& 
+usr&& 
+;&& 
+}'' 	
+public(( 
+TravellerUser(( 
+GetUserByApiKey(( ,
+(((, -
+String((- 3
+apiKey((4 :
+)((: ;
+{)) 	
+TravellerUser** 
+usr** 
+=** 
+TravellerUsers**  .
+.**. /
+ToList**/ 5
+(**5 6
+)**6 7
+.**7 8
+Find**8 <
+(**< =
+usr**= @
+=>**A C
+PasswordHasher**D R
+.**R S
+	checkHash**S \
+(**\ ]
+usr**] `
+.**` a
+ApiKey**a g
+,**g h
+apiKey**i o
+)**o p
+)**p q
+;**q r
+if++ 
+(++ 
+usr++ 
+==++ 
+null++ 
+)++ 
+{,, 
+throw-- %
+InvalidOperationException-- /
+(--/ 0
+$str--0 E
+)--E F
+;--F G
+}.. 
+return// 
+usr// 
+;// 
+}00 	
+public11 
+void11 
+CreateTravellerUser11 '
+(11' (
+String11( .
+apiKey11/ 5
+,115 6
+String117 =
+	loginHash11> G
+,11G H
+String11I O
+username11P X
+)11X Y
+{22 	
+if33 
+(33 
+TravellerUsers33 
+.33 
+ToList33 $
+(33$ %
+)33% &
+.33& '
+Find33' +
+(33+ ,
+usr33, /
+=>330 2
+usr333 6
+.336 7
+UserName337 ?
+==33@ B
+username33C K
+)33K L
+!=33M O
+null33P T
+)33T U
+{44 
+throw55 %
+InvalidOperationException55 /
+(55/ 0
+$str550 C
+)55C D
+;55D E
+}66 
+TravellerUser77 
+usr77 
+=77 
+new77  #
+(77# $
+)77$ %
+{88 
+	LoginHash99 
+=99 
+	loginHash99 %
+,99% &
+ApiKey:: 
+=:: 
+apiKey:: 
+,::  
+UserName;; 
+=;; 
+username;; #
+,;;# $
+Trips<< 
+=<< 
+new<< 
+List<<  
+<<<  !
+Trip<<! %
+><<% &
+(<<& '
+)<<' (
+}== 
+;== 
+TravellerUsers>> 
+.>> 
+Add>> 
+(>> 
+usr>> "
+)>>" #
+;>># $
+this?? 
+.?? 
+SaveChanges?? 
+(?? 
+)?? 
+;?? 
+}@@ 	
+privateBB 
+	ExceptionBB %
+InvalidOperationExceptionBB 3
+(BB3 4
+stringBB4 :
+vBB; <
+)BB< =
+{CC 	
+throwDD 
+newDD #
+NotImplementedExceptionDD -
+(DD- .
+)DD. /
+;DD/ 0
+}EE 	
+publicGG 
+voidGG 
 
-CreateTrip?? 
-(?? 
-int?? "
-	forUserId??# ,
-,??, -
-String??. 4
-tripName??5 =
-)??= >
-{@@ 	
-TripAA 
-tripAA 
-=AA 
-newAA 
-(AA 
-)AA 
-{BB 
-TripNameCC 
-=CC 
-tripNameCC #
-,CC# $
-HotelReservationsDD !
-=DD" #
-newDD$ '
-ListDD( ,
-<DD, -
-HotelReservationDD- =
->DD= >
-(DD> ?
-)DD? @
-,DD@ A!
-CarRentalReservationsEE %
-=EE& '
-newEE( +
-ListEE, 0
-<EE0 1 
-CarRentalReservationEE1 E
->EEE F
-(EEF G
-)EEG H
-,EEH I#
-PlaneTicketReservationsFF '
-=FF( )
-newFF* -
-ListFF. 2
-<FF2 3"
-PlaneTicketReservationFF3 I
->FFI J
-(FFJ K
-)FFK L
-,FFL M
-}GG 
-;GG 
-TravellerUserHH 
-usrHH 
-=HH 
-TravellerUsersHH  .
-.HH. /
-ToListHH/ 5
-(HH5 6
-)HH6 7
-.HH7 8
-FindHH8 <
-(HH< =
-usrHH= @
-=>HHA C
-usrHHD G
-.HHG H
-IdHHH J
-==HHK M
-	forUserIdHHN W
-)HHW X
-;HHX Y
-usrII 
-.II 
-TripsII 
-.II 
-AddII 
-(II 
-tripII 
-)II 
-;II  
-thisJJ 
-.JJ 
-SaveChangesJJ 
-(JJ 
-)JJ 
-;JJ 
-}KK 	
-publicMM 
-voidMM %
-AddHotelReservationToTripMM -
-(MM- .
-intNN 
-	forTripIdNN 
-,NN 
-StringOO 
-	hotelNameOO 
-,OO 
-DateTimePP 
-	startDatePP 
-,PP 
-DateTimeQQ 
-endDateQQ 
-,QQ 
-StringRR 
-adressRR 
-,RR 
-floatSS 
-priceSS 
-,SS 
-floatTT 
-amountAlreadyPaidTT #
-,TT# $
+CreateTripGG 
+(GG 
+intGG "
+	forUserIdGG# ,
+,GG, -
+StringGG. 4
+tripNameGG5 =
+)GG= >
+{HH 	
+TripII 
+tripII 
+=II 
+newII 
+(II 
+)II 
+{JJ 
+TripNameKK 
+=KK 
+tripNameKK #
+,KK# $
+HotelReservationsLL !
+=LL" #
+newLL$ '
+ListLL( ,
+<LL, -
+HotelReservationLL- =
+>LL= >
+(LL> ?
+)LL? @
+,LL@ A!
+CarRentalReservationsMM %
+=MM& '
+newMM( +
+ListMM, 0
+<MM0 1 
+CarRentalReservationMM1 E
+>MME F
+(MMF G
+)MMG H
+,MMH I#
+PlaneTicketReservationsNN '
+=NN( )
+newNN* -
+ListNN. 2
+<NN2 3"
+PlaneTicketReservationNN3 I
+>NNI J
+(NNJ K
+)NNK L
+,NNL M
+}OO 
+;OO 
+TravellerUserPP 
+usrPP 
+=PP 
+TravellerUsersPP  .
+.PP. /
+ToListPP/ 5
+(PP5 6
+)PP6 7
+.PP7 8
+FindPP8 <
+(PP< =
+usrPP= @
+=>PPA C
+usrPPD G
+.PPG H
+IdPPH J
+==PPK M
+	forUserIdPPN W
+)PPW X
+;PPX Y
+usrQQ 
+.QQ 
+TripsQQ 
+.QQ 
+AddQQ 
+(QQ 
+tripQQ 
+)QQ 
+;QQ  
+thisRR 
+.RR 
+SaveChangesRR 
+(RR 
+)RR 
+;RR 
+}SS 	
+publicUU 
+voidUU %
+AddHotelReservationToTripUU -
+(UU- .
+intVV 
+	forTripIdVV 
+,VV 
+StringWW 
+	hotelNameWW 
+,WW 
+DateTimeXX 
+	startDateXX 
+,XX 
+DateTimeYY 
+endDateYY 
+,YY 
+StringZZ 
+adressZZ 
+,ZZ 
+float[[ 
+price[[ 
+,[[ 
+float\\ 
+amountAlreadyPaid\\ #
+,\\# $
 
-AgencyUserUU 
+AgencyUser]] 
 
-agencyUserUU !
-=UU" #
-nullUU$ (
-,UU( )
-StringVV 
-observationsVV 
-=VV  !
-$strVV" $
-)VV$ %
-{WW 	
-HotelReservationXX 
-hrsXX  
-=XX! "
-newXX# &
-(XX& '
-)XX' (
-{YY 
-PriceZZ 
-=ZZ 
-priceZZ 
-,ZZ 
-AmountAlreadyPaid[[ !
-=[[" #
-amountAlreadyPaid[[$ 5
-,[[5 6
-Observations\\ 
-=\\ 
-observations\\ +
-,\\+ ,
+agencyUser]] !
+=]]" #
+null]]$ (
+,]]( )
+String^^ 
+observations^^ 
+=^^  !
+$str^^" $
+)^^$ %
+{__ 	
+HotelReservation`` 
+hrs``  
+=``! "
+new``# &
+(``& '
+)``' (
+{aa 
+Pricebb 
+=bb 
+pricebb 
+,bb 
+AmountAlreadyPaidcc !
+=cc" #
+amountAlreadyPaidcc$ 5
+,cc5 6
+Observationsdd 
+=dd 
+observationsdd +
+,dd+ ,
 
-AgencyUser]] 
-=]] 
+AgencyUseree 
+=ee 
 
-agencyUser]] '
-,]]' (
-StartingPeriod^^ 
-=^^  
-	startDate^^! *
-,^^* +
-EndingPeriod__ 
-=__ 
-endDate__ &
-,__& '
-Adress`` 
-=`` 
-adress`` 
-,``  
-	HotelNameaa 
-=aa 
-	hotelNameaa %
-}bb 
-;bb 
-varcc 
-tripcc 
-=cc 
-Tripscc 
-.cc 
-ToListcc #
-(cc# $
-)cc$ %
-.cc% &
-Findcc& *
-(cc* +
-trcc+ -
-=>cc. 0
-trcc1 3
-.cc3 4
-Idcc4 6
-==cc7 9
-	forTripIdcc: C
-)ccC D
-;ccD E
-tripdd 
-.dd 
-HotelReservationsdd "
-.dd" #
-Adddd# &
-(dd& '
-hrsdd' *
-)dd* +
-;dd+ ,
-}ee 	
-}gg 
-}hh ∂
-hC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\ResponseWrappers\LoginResponseWrapper.cs
+agencyUseree '
+,ee' (
+StartingPeriodff 
+=ff  
+	startDateff! *
+,ff* +
+EndingPeriodgg 
+=gg 
+endDategg &
+,gg& '
+Adresshh 
+=hh 
+adresshh 
+,hh  
+	HotelNameii 
+=ii 
+	hotelNameii %
+}jj 
+;jj 
+varkk 
+tripkk 
+=kk 
+Tripskk 
+.kk 
+ToListkk #
+(kk# $
+)kk$ %
+.kk% &
+Findkk& *
+(kk* +
+trkk+ -
+=>kk. 0
+trkk1 3
+.kk3 4
+Idkk4 6
+==kk7 9
+	forTripIdkk: C
+)kkC D
+;kkD E
+tripll 
+.ll 
+HotelReservationsll "
+.ll" #
+Addll# &
+(ll& '
+hrsll' *
+)ll* +
+;ll+ ,
+}mm 	
+}oo 
+}pp ù
+cC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\ResponseWrappers\AddTripResponse.cs
+	namespace 	
+TheRoadWarrior
+ 
+. 
+Model 
+. 
+ResponseWrappers /
+{ 
+public 
+
+class 
+AddTripResponse  
+{		 
+public
+
+ 
+int
+
+ 
+ResponseCode
+
+ 
+{
+
+  !
+get
+
+" %
+;
+
+% &
+set
+
+' *
+;
+
+* +
+}
+
+, -
+public 
+String 
+Description !
+{" #
+get$ '
+;' (
+set) ,
+;, -
+}. /
+} 
+} î
+hC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\ResponseWrappers\LoginResponseWrapper.cs
 	namespace 	
 TheRoadWarrior
  
@@ -2535,19 +2958,10 @@ hC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\ResponseWrapper
 ;" #
 set$ '
 ;' (
-}) *
-public 
-String 
-ReservationKey $
-{% &
-get' *
-;* +
-set, /
-;/ 0
-}1 2
-} 
-} ˙	
-PC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\TravellerUser.cs
+}) *
+} 
+} ˙	
+PC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\TravellerUser.cs
 	namespace 	
 TheRoadWarrior
  
@@ -2621,7 +3035,7 @@ PC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\TravellerUser.c
 }+ ,
 } 
 } ß
-GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\Trip.cs
+GC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\Trip.cs
 	namespace 	
 TheRoadWarrior
  
@@ -2752,7 +3166,7 @@ GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\Trip.cs
 } 	
 } 
 } µ
-GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\User.cs
+GC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Model\User.cs
 	namespace 	
 TheRoadWarrior
  
@@ -2794,7 +3208,7 @@ GC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Model\User.cs
 } 
 } †
 
-DC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Program.cs
+DC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Program.cs
 	namespace
 
  	
@@ -2873,7 +3287,7 @@ UseStartup )
 ; 
 } 
 } Ë
-DC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\Startup.cs
+DC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\Startup.cs
 	namespace 	
 TheRoadWarrior
  
@@ -3048,7 +3462,7 @@ UseRouting66 
 }@@ 	
 }AA 
 }BB ‘
-LC:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\TheRoadWarrior\WeatherForecast.cs
+LC:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\WeatherForecast.cs
 	namespace 	
 TheRoadWarrior
  

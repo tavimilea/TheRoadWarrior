@@ -1,1 +1,1 @@
-C:\UAIC\.NET\TheRoadWarrior\TheRoadWArrior\.sonarqube\out\0
+C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\.sonarqube\out\0

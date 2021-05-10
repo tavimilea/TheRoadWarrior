@@ -18,12 +18,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWArrior/TheRoadWarrior/Program.cs",
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Program.cs",
                 "region": {
                   "startLine": 12,
                   "startColumn": 18,
                   "endLine": 12,
                   "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Model/Hashing/PasswordHasher.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 18,
+                  "endLine": 8,
+                  "endColumn": 32
                 }
               }
             }
@@ -39,12 +60,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWArrior/TheRoadWarrior/Model/Reservation.cs",
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Model/Reservation.cs",
                 "region": {
                   "startLine": 12,
                   "startColumn": 21,
                   "endLine": 12,
                   "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1199",
+          "level": "warning",
+          "message": "Extract this nested code block into a separate method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Controllers/LoginController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 13,
+                  "endLine": 27,
+                  "endColumn": 14
                 }
               }
             }
@@ -60,11 +102,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWArrior/TheRoadWarrior/Model/ReservationsDbContext.cs",
+                "uri": "file:///C:/UAIC/.NET/TheRoadWarrior/TheRoadWarrior/TheRoadWarrior/Model/ReservationsDbContext.cs",
                 "region": {
-                  "startLine": 77,
+                  "startLine": 85,
                   "startColumn": 46,
-                  "endLine": 86,
+                  "endLine": 94,
                   "endColumn": 38
                 }
               }
@@ -117,6 +159,23 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
           "properties": {
             "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1199": {
+          "id": "S1199",
+          "shortDescription": "Nested code blocks should not be used",
+          "fullDescription": "Nested code blocks can be used to create a new scope and restrict the visibility of the variables defined inside it. Using this feature in a method typically indicates that the method has too many responsibilities, and should be refactored into smaller methods.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1199",
+          "properties": {
+            "category": "Minor Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",
