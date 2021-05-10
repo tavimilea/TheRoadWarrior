@@ -117,3 +117,4 @@ D:\Git\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarr
 D:\Git\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\ref\TheRoadWarrior.dll
 D:\Git\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.pdb
 D:\Git\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.genruntimeconfig.cache
+C:\UAIC\.NET\TheRoadWarrior\TheRoadWarrior\TheRoadWarrior\obj\Debug\net5.0\TheRoadWarrior.csprojAssemblyReference.cache

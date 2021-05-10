@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {}
+    "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {}
   },
   "projects": {
-    "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {
+    "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
+        "projectUniqueName": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
         "projectName": "TheRoadWarrior",
-        "projectPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
-        "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\obj\\",
+        "projectPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
+        "packagesPath": "C:\\Users\\octav\\.nuget\\packages\\",
+        "outputPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\octav\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
         }
       }
     }
