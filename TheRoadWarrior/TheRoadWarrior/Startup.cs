@@ -21,6 +21,16 @@ namespace TheRoadWarrior
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(
+                    name: "AllowOrigin",
+                    builder => {
+                        builder.AllowAnyOrigin()
+                                .AllowAnyMethod()
+                                .AllowAnyHeader();
+                    });
+            });
             services.AddSwaggerGen();
             services.AddDbContext<ReservationsDbContext>(options => {
                 options.UseSqlite(this.Configuration.GetConnectionString("DefaultConnection"));
@@ -30,6 +40,8 @@ namespace TheRoadWarrior
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("AllowOrigin");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -54,6 +66,8 @@ namespace TheRoadWarrior
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.UseHttpsRedirection();
         }
     }
 }

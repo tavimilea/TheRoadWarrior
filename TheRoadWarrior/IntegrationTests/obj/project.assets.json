@@ -7735,19 +7735,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\octav\\.nuget\\packages\\": {}
+    "C:\\Users\\mihai\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\IntegrationTests\\IntegrationTests.csproj",
+      "projectUniqueName": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\IntegrationTests\\IntegrationTests.csproj",
       "projectName": "IntegrationTests",
-      "projectPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\IntegrationTests\\IntegrationTests.csproj",
-      "packagesPath": "C:\\Users\\octav\\.nuget\\packages\\",
-      "outputPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\IntegrationTests\\obj\\",
+      "projectPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\IntegrationTests\\IntegrationTests.csproj",
+      "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\octav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7761,8 +7761,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {
-              "projectPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj"
+            "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj": {
+              "projectPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj"
             }
           }
         }
@@ -7829,7 +7829,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

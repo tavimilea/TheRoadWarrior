@@ -5776,19 +5776,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\octav\\.nuget\\packages\\": {}
+    "C:\\Users\\mihai\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
+      "projectUniqueName": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
       "projectName": "TheRoadWarrior",
-      "projectPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
-      "packagesPath": "C:\\Users\\octav\\.nuget\\packages\\",
-      "outputPath": "C:\\UAIC\\.NET\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\obj\\",
+      "projectPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior.csproj",
+      "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
+      "outputPath": "D:\\Git\\TheRoadWarrior\\TheRoadWarrior\\TheRoadWarrior\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\octav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5855,7 +5855,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
