@@ -26,31 +26,25 @@ export class AuthService {
   }
 
   register(model: any) {
-    return this.http.post(this.baseUrl + 'Register',model).pipe(
-      map((response: any) => {
-        const user = response;
-        console.log(user);
-        if(user.responseCode == 200){
-          console.log(user.responseCode);
-          localStorage.setItem('token',user.apiKey)
-        }
-        else{
-          console.log(user.responseCode);
-
-        }
-      })
-    );
+    return this.http.post(this.baseUrl + 'Register',model);
   }
 
-  resetPassword(model: any) {
+
+  dashboard(model: any){
+    return this.http.post(this.baseUrl + 'Trips', model)
   }
 
-  confirmEmail(model: any) {
+  dashboardHotel(model: any){
+    return this.http.post(this.baseUrl + 'Trips/HotelReservations', model)
   }
 
-  changePassword(model: any) {
+  dashboardCar(model: any){
+    return this.http.post(this.baseUrl + 'Trips/CarReservations', model)
   }
 
-  loggedIn() {
+  getToken(){
   }
+
+  loggedIn(){}
+
 }
