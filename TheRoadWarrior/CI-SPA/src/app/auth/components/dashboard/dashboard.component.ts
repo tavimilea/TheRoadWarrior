@@ -54,10 +54,11 @@ export class DashboardComponent implements OnInit {
     }
     else if (this.clicked == 1) {
       this.g = f;
-      console.log(this.g.value)
+      console.log(this.g.value);
       this.authService.dashboardHotel(this.g.value).subscribe(HotelObserver);
     }
     else {
+      this.h =  f;
       console.log(this.h.value)
       this.authService.dashboardCar(this.h.value).subscribe(carObserver);
 
@@ -90,6 +91,9 @@ export class DashboardComponent implements OnInit {
     this.clicked = 2;
     console.log(this.clicked);
   }
+
+  loggedIn()
+  {}
 
 
 }

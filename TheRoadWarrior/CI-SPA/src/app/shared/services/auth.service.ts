@@ -25,8 +25,17 @@ export class AuthService {
     );
   }
 
+
   register(model: any) {
-    return this.http.post(this.baseUrl + 'Register',model);
+    return this.http.post(this.baseUrl + 'Register',model).pipe(
+      map((response: any) => {
+        const user = response;
+        console.log(user);
+        if(user.responseCode == 200){
+          console.log(user.responseCode);
+        }
+      })
+    );
   }
 
 
@@ -42,9 +51,14 @@ export class AuthService {
     return this.http.post(this.baseUrl + 'Trips/CarReservations', model)
   }
 
+  getTripId(){
+
+  }
+
   getToken(){
   }
 
-  loggedIn(){}
+  loggedIn(){
+  }
 
 }
